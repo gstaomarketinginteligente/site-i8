@@ -1,119 +1,103 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
+import { RouterView } from "vue-router";
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
+  <Header />
   <RouterView />
+  <Footer />
 </template>
 
 <style>
-@import '@/assets/base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+html {
+  --verde: #17bf1f;
+  --verde-escuro: #0abf04;
+  --roxo: #8366ff;
+  --preto-claro: #1a1a1a;
 }
 
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-a,
-.green {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+html {
+  font-size: 10px;
 }
 
-nav {
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+span {
+  color: var(--roxo);
+}
+
+.section-container {
+  max-width: 1366px;
   width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+  margin: 0 auto;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+h1 {
+  font-size: 6.4rem;
+  font-weight: 600;
+  line-height: 6.4rem;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 5.98rem;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.36rem;
 }
 
-nav a:first-of-type {
-  border: 0;
+p {
+  font-size: 1.8rem;
+  line-height: 2.88rem;
+  font-weight: 300;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+button,
+.button {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3.24rem;
+  padding: 0.5rem 1.5rem;
+  border: solid var(--verde) 0.3rem;
+  color: var(--verde);
+  border-radius: 1.5rem;
+  transition: 0.3s;
+}
+
+button:hover,
+.button:hover {
+  filter: brightness(120%);
+}
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 9px;
   }
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+@media screen and (min-width: 1360px) {
+  .section-container {
+    padding: 0vh 5vw;
   }
 }
 </style>
