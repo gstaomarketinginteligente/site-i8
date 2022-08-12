@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: calc(5px + 0.390625vw);
+
+    --verde: #17bf1f;
+    --verde-escuro: #0abf04;
+    --roxo: #8366ff;
+    --preto-claro: #1a1a1a;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    padding-top: 5rem;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+span {
+    color: var(--roxo);
+}
+
+span.green {
+    color: var(--verde);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 7rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+p,
+a,
+input {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+input {
+    width: 100%;
+    border: 0.1rem solid #8E8E8E;
+    border-radius: 1.5rem;
+    padding: 1.2rem 3rem;
+    font-family: "Kanit", sans-serif;
+
+}
+
+.button1,
+.button2 {
+    font-size: 2rem;
+    font-weight: 500;
+    border: 0.4rem solid #1A1A1A;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    line-height: 3.6rem;
+    min-width: fit-content;
+    white-space: nowrap;
+    color: black !important;
+    background-color: white;
+    font-family: "Kanit", sans-serif;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.button1:hover {
+    color: var(--roxo) !important;
+    border-color: var(--roxo);
+    transform: translate3d(0.5rem, -0.5rem, 0);
+    box-shadow: -0.5rem 0.5rem 0rem var(--roxo);
+}
+
+.button1:active {
+    background-color: var(--roxo);
+    color: white !important;
+    transform: translate3d(0, 0, 0);
+    box-shadow: none;
+}
+
+.button2:hover {
+    color: var(--roxo) !important;
+    border-color: var(--roxo);
+    transform: translate3d(0.5rem, -0.5rem, 0);
+    box-shadow: -0.5rem 0.5rem 0rem var(--roxo);
+}
+
+.button2:active {
+    background-color: var(--roxo);
+    color: black !important;
+    transform: translate3d(0, 0, 0);
+    box-shadow: none;
+}
+
+.button1 {
+    padding: 0 2rem;
+}
+
+.button2 {
+    padding: 0 1rem;
+}
+
+.button3 {
+    font-size: 2rem;
+    font-weight: 500;
+    border: 0.4rem solid var(--verde);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    line-height: 3.6rem;
+    min-width: fit-content;
+    width: fit-content;
+    white-space: nowrap;
+    color: var(--verde) !important;
+    background-color: white;
+    font-family: "Kanit", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+
+.dotted {
+    color: var(--verde);
+    border: 0.3rem dashed var(--verde);
+    position: relative;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.dotted::after {
+    content: url(~/assets/images/mouse.svg);
+    position: absolute;
+    right: -2.5rem;
+    bottom: -3.5rem;
+}
+
+.window-wrapper {
+    border: 0.3rem solid black;
+    padding: 5rem 5rem;
+    border-radius: 1rem;
+}
+
+.arrow-right {
+    margin-left: 1rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+}
+
+.section-header h2 {
+    width: 0;
+    white-space: nowrap;
+    color: white;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1380px) {
+    html {
+        font-size: calc(3.5px + 0.390625vw);
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: calc(4.2px + 0.390625vw);
+    }
+
+}
