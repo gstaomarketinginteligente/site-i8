@@ -83,7 +83,7 @@
             <button
               class="button1"
               type="submit"
-              onclick="location.href='/obrigado'; sendEmail();"
+              onsubmit="location.href='/obrigado'; sendEmail();"
               id="formbtn"
             >
               MODERNIZAR MINHA EMPRESA
@@ -381,7 +381,12 @@
               max="14"
               placeholder="DDD + Seu Melhor Número:"
             />
-            <button class="button1" type="submit" id="formbtn2">
+            <button
+              class="button1"
+              type="submit"
+              id="formbtn2"
+              onsubmit="location.href='/obrigado'; sendEmail();"
+            >
               MODERNIZAR MINHA EMPRESA
             </button>
           </form>
