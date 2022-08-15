@@ -31,6 +31,9 @@ export default {
         crossorigin: "anonymous",
         referrerpolicy: "no-referrer",
       },
+      {
+        src: "https://d335luupugsy2.cloudfront.net/js/loader-scripts/822b35a6-7246-4979-97c1-7112f3fe39f7-loader.js",
+      },
     ],
   },
 
