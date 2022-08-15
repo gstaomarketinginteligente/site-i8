@@ -76,16 +76,11 @@
               id="formNumber"
               required
               type="tel"
-              min="10"
-              max="14"
+              minlength="10"
+              maxlength="14"
               placeholder="DDD + Seu Melhor Número:"
             />
-            <button
-              class="button1"
-              type="submit"
-              onsubmit="location.href='/obrigado'; sendEmail();"
-              id="formbtn"
-            >
+            <button class="button1" type="submit" id="formbtn">
               MODERNIZAR MINHA EMPRESA
             </button>
           </form>
@@ -377,16 +372,11 @@
               id="formNumber2"
               required
               type="tel"
-              min="10"
-              max="14"
+              minlength="10"
+              maxlength="14"
               placeholder="DDD + Seu Melhor Número:"
             />
-            <button
-              class="button1"
-              type="submit"
-              id="formbtn2"
-              onsubmit="location.href='/obrigado'; sendEmail();"
-            >
+            <button class="button1" type="submit" id="formbtn2">
               MODERNIZAR MINHA EMPRESA
             </button>
           </form>
@@ -579,7 +569,7 @@ export default {
           dataForm.name +
           ",\nLogo entraremos em contato!"
       );
-
+      location.href = "/obrigado";
       event.preventDefault();
     });
 
@@ -609,6 +599,8 @@ export default {
           dataForm.name +
           ",\nLogo entraremos em contato!"
       );
+
+      location.href = "/obrigado";
 
       event.preventDefault();
     });
