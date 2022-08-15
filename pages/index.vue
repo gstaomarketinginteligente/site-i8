@@ -35,9 +35,8 @@
             <p>
               Agende agora mesmo uma reunião com nosso especialista, ele irá
               realizar um diagnóstico com você
-              <span class="dotted"
-                >e apontar pontos chaves que devem ser aprimorados!</span
-              >
+              <span class="dotted">e apontar pontos chaves</span> que devem ser
+              aprimorados!
             </p>
           </div>
           <form id="form">
@@ -45,7 +44,8 @@
               id="formName"
               required
               type="text"
-              minlength="2"
+              minlength="5"
+              maxlength="30"
               placeholder="Seu nome:"
             />
             <input
@@ -53,27 +53,31 @@
               required
               type="email"
               minlength="6"
+              maxlength="30"
               placeholder="Seu Melhor E-mail:"
             />
             <input
               id="formRole"
               required
               type="text"
-              minlength="1"
+              minlength="5"
+              maxlength="20"
               placeholder="Seu Cargo:"
             />
             <input
               id="formCompany"
               required
               type="text"
-              minlength="1"
+              minlength="5"
+              maxlength="25"
               placeholder="Nome da empresa:"
             />
             <input
               id="formNumber"
               required
               type="tel"
-              minlength="10"
+              min="10"
+              max="14"
               placeholder="DDD + Seu Melhor Número:"
             />
             <button
@@ -201,10 +205,8 @@
             <p>
               Somos especialistas em Desenvolvimento de Softwares, visando
               sempre modernizar sua empresa usando as mais recentes inovações do
-              mercado através da nossa Fábrica de Softwares, que
-              <span class="dotted"
-                >é reconhecida por sua agilidade na entrega,</span
-              >
+              mercado através da nossa Fábrica de Softwares, que é reconhecida
+              por sua <span class="dotted">agilidade na entrega,</span>
               mas nós nos estendemos também para:
             </p>
           </div>
@@ -334,9 +336,8 @@
             <p>
               Agende agora mesmo uma reunião com nosso especialista, ele irá
               realizar um diagnóstico com você
-              <span class="dotted"
-                >e apontar pontos chaves que devem ser aprimorados!</span
-              >
+              <span class="dotted">e apontar pontos chaves</span> que devem ser
+              aprimorados!
             </p>
           </div>
           <form id="form2">
@@ -344,7 +345,8 @@
               id="formName2"
               required
               type="text"
-              minlength="2"
+              minlength="5"
+              maxlength="30"
               placeholder="Seu nome:"
             />
             <input
@@ -352,27 +354,31 @@
               required
               type="email"
               minlength="6"
+              maxlength="30"
               placeholder="Seu Melhor E-mail:"
             />
             <input
               id="formRole2"
               required
               type="text"
-              minlength="1"
+              minlength="5"
+              maxlength="20"
               placeholder="Seu Cargo:"
             />
             <input
               id="formCompany2"
               required
               type="text"
-              minlength="1"
+              minlength="5"
+              maxlength="25"
               placeholder="Nome da empresa:"
             />
             <input
               id="formNumber2"
               required
               type="tel"
-              minlength="10"
+              min="10"
+              max="14"
               placeholder="DDD + Seu Melhor Número:"
             />
             <button class="button1" type="submit" id="formbtn2">

@@ -245,7 +245,7 @@ article .criativo {
     border: 3px solid black;
     border-radius: 1.5rem;
     padding: 2rem 2rem 5rem;
-    min-width: 36rem;
+    cursor: grab;
 }
 
 .card-wrapper .card-header {
