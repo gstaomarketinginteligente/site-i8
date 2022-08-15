@@ -46,7 +46,7 @@
               type="text"
               minlength="5"
               maxlength="30"
-              placeholder="Seu nome:"
+              placeholder="Seu Nome:"
             />
             <input
               id="formEmail"
@@ -70,7 +70,7 @@
               type="text"
               minlength="5"
               maxlength="25"
-              placeholder="Nome da empresa:"
+              placeholder="Nome da Empresa:"
             />
             <input
               id="formNumber"
@@ -347,7 +347,7 @@
               type="text"
               minlength="5"
               maxlength="30"
-              placeholder="Seu nome:"
+              placeholder="Seu Nome:"
             />
             <input
               id="formEmail2"
@@ -371,7 +371,7 @@
               type="text"
               minlength="5"
               maxlength="25"
-              placeholder="Nome da empresa:"
+              placeholder="Nome da Empresa:"
             />
             <input
               id="formNumber2"
