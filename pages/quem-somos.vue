@@ -228,13 +228,13 @@ export default {
       const scrolled = window.scrollY;
       const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100;
 
-      if (percentScrolled > 52) {
+      if (percentScrolled > 42) {
         sectionHeader1.style.padding = "0 2rem";
         sectionHeader1.style.animation =
           "titleSectionW 0.5s ease-out 0s forwards, 0.5s titleSectionO ease-in-out 0.2s forwards";
       }
 
-      if (percentScrolled > 82) {
+      if (percentScrolled > 78) {
         sectionHeader2.style.padding = "0 2rem";
         sectionHeader2.style.animation =
           "titleSectionW 0.5s ease-out 0s forwards, 0.5s titleSectionO ease-in-out 0.2s forwards";
@@ -294,7 +294,7 @@ export default {
 }
 
 .sec-1 {
-  height: 70rem;
+  padding: 10rem 0;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 0.7fr;
@@ -318,7 +318,7 @@ export default {
 .sec-2,
 .sec-3,
 .sec-4 {
-  height: 75rem;
+  padding: 5rem 0;
 }
 
 .sec-2,
@@ -374,10 +374,10 @@ export default {
 }
 
 .sec-5 {
-  height: 100rem;
+  padding: 5rem 0;
 }
 .sec-6 {
-  height: 80rem;
+  padding: 5rem 0;
 }
 
 @media screen and (max-width: 930px) {
@@ -398,16 +398,17 @@ export default {
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
     border: none;
-    padding: none;
+    padding: 0;
     text-align: center;
-    height: 80rem;
+    height: 75rem;
   }
 
-  .sec-2,
-  .sec-3,
-  .sec-4 {
-    height: 90rem;
+  /* .sec-3 .container .window-wrapper {
+    grid-template-rows: 1fr 1fr;
   }
+  .sec-4 .container .window-wrapper {
+    grid-template-rows: 0.4fr 1fr;
+  } */
 
   .sec-2 .bg {
     background-size: 25rem;
@@ -420,7 +421,6 @@ export default {
   }
 
   .sec-5 {
-    height: 160rem;
   }
 
   .cases-images img {

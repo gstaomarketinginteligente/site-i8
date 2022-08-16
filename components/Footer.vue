@@ -5,6 +5,7 @@
         <img
           src="~/assets/images/desktop/footer/logo-negative.svg"
           alt="logo rodape i8"
+          class="footer-logo"
         />
         <div class="about-section">
           <p class="section-title">Sobre a i8</p>
@@ -159,6 +160,10 @@ footer .bottom-section {
   background-color: black;
   color: lightgray;
   padding: 1rem;
+}
+
+footer .footer-logo {
+  filter: grayscale(1);
 }
 
 @media screen and (max-width: 1060px) {

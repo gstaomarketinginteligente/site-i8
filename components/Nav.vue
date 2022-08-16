@@ -74,7 +74,7 @@ header .container,
 }
 
 header img {
-  width: 8rem;
+  width: 4rem;
 }
 
 .nav-items a:not(:last-child) {
@@ -107,11 +107,16 @@ header img {
     transition: 0.3s;
   }
 
+  .container {
+    position: relative;
+  }
+
   .menu {
     display: block;
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+    top: 2vh;
+    right: 0;
+
     z-index: 98;
     width: 4rem;
     cursor: pointer;
@@ -120,10 +125,18 @@ header img {
   .close {
     display: block;
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+    top: 2vh;
+    right: 2vh;
     cursor: pointer;
     width: 3.5rem;
+  }
+
+  a {
+    font-size: 2.5rem;
+  }
+
+  .nav-items a:not(:last-child) {
+    margin: 0;
   }
 }
 </style>

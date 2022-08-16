@@ -199,10 +199,11 @@ export default {
 .sec-4 {
   display: flex;
   align-items: center;
+  padding: 5rem 0;
 }
 
 .sec-1 {
-  height: 70rem;
+  padding: 10rem 0;
 }
 
 .sec-1 .container {
@@ -230,10 +231,6 @@ export default {
 
 .sec-1 .content .button3 {
   margin-top: 2rem;
-}
-
-.sec-2 {
-  height: 70rem;
 }
 
 .sec-2 .container {
@@ -282,15 +279,14 @@ export default {
 
 .sec-3,
 .sec-4 {
-  height: 60rem;
 }
 
 .sec-3 .window-wrapper,
 .sec-4 .window-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  box-sizing: content-box;
   height: 40rem;
-  padding: 0;
 }
 
 .sec-4 .window-wrapper {
@@ -328,7 +324,6 @@ export default {
   }
 
   .sec-1 {
-    height: 90rem;
     justify-content: center;
   }
   .sec-1 .container {
@@ -346,10 +341,6 @@ export default {
     align-items: center;
   }
 
-  .sec-2 {
-    height: 80rem;
-  }
-
   .sec-2 .cards-wrapper {
     width: 90vw;
   }
@@ -358,24 +349,28 @@ export default {
     min-width: 80vw;
   }
 
-  .sec-3,
-  .sec-4 {
-    height: 70rem;
-  }
-
   .sec-3 .window-wrapper,
   .sec-4 .window-wrapper {
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
     padding: 0;
     border: none;
-    height: 60rem;
     text-align: center;
     justify-content: center;
+    height: 50rem;
   }
 
   .title {
     margin: auto;
+  }
+
+  .sec-3 .bg {
+    background: url(~/assets/images/desktop/solutions/grafism.svg) center/30rem
+      no-repeat;
+  }
+  .sec-4 .bg {
+    background: url(~/assets/images/desktop/solutions/frame.svg) center/30rem
+      no-repeat;
   }
 }
 </style>

@@ -26,12 +26,12 @@
       <div class="container">
         <div class="form-wrapper">
           <div>
-            <h3>
+            <h2>
               A hora de modernizar sua empresa já passou… Mas ainda da tempo de
               <span style="color: var(--verde)"
                 >recuperar o tempo perdido!</span
               >
-            </h3>
+            </h2>
             <p>
               Agende agora mesmo uma reunião com nosso especialista, ele irá
               realizar um diagnóstico com você
