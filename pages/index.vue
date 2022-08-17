@@ -125,14 +125,14 @@
             <div>
               <h3>i8 Tecnologia da informação</h3>
               <p>Programação e Desenvolvimento web</p>
-              <a href="https://www.i8.com.br/" target="_blank" class="button2">
+              <nuxt-link to="/quem-somos" class="button2">
                 Saiba Mais Sobre a i8
                 <img
                   src="~/assets/images/east.svg"
                   class="arrow-right"
                   alt=""
                 />
-              </a>
+              </nuxt-link>
             </div>
           </article>
         </div>
@@ -223,14 +223,14 @@
                   mais eficiente, o que resulta em um aumento da produtividade e
                   lucratividade da sua empresa.
                 </p>
-                <a href="https://www.i8.com.br/" target="_blank" class="button2"
+                <nuxt-link to="/solucoes" class="button2"
                   >Saiba Mais
                   <img
                     loading="lazy"
                     class="arrow-right"
                     src="~/assets/images/east.svg"
                     alt=""
-                /></a>
+                /></nuxt-link>
               </div>
             </div>
             <div class="card-wrapper">
@@ -249,14 +249,14 @@
                   de forma a proporcionar a melhor experiência de trabalho
                   possível.
                 </p>
-                <a href="https://www.i8.com.br/" target="_blank" class="button2"
+                <nuxt-link to="/solucoes" class="button2"
                   >Saiba Mais
                   <img
                     loading="lazy"
                     class="arrow-right"
                     src="~/assets/images/east.svg"
                     alt=""
-                /></a>
+                /></nuxt-link>
               </div>
             </div>
           </div>
@@ -281,7 +281,9 @@
             necessário, mas temos alguns produtos prontos desenvolvidos ao longo
             da nossa trajetória.
           </p>
-          <a href="" class="button2">VER TODOS OS SERVIÇOS</a>
+          <nuxt-link to="/solucoes" class="button2"
+            >VER TODOS OS SERVIÇOS</nuxt-link
+          >
         </div>
       </div>
     </section>

@@ -12,6 +12,7 @@
       <img src="~/assets/images/menu-icon.svg" alt="" class="menu" />
       <div class="nav-items">
         <img src="~/assets/images/close.svg" alt="" class="close" />
+        <nuxt-link to="/">Home</nuxt-link>
         <nuxt-link to="/quem-somos">Quem Somos</nuxt-link>
         <nuxt-link to="/solucoes">Soluções</nuxt-link>
         <a href="https://www.blog.i8.com.br/" target="_blank">Blog</a>
@@ -108,14 +109,13 @@ header img {
   }
 
   .container {
-    position: relative;
   }
 
   .menu {
     display: block;
     position: absolute;
-    top: 2vh;
-    right: 0;
+    top: 2rem;
+    right: 2rem;
 
     z-index: 98;
     width: 4rem;
@@ -125,8 +125,8 @@ header img {
   .close {
     display: block;
     position: absolute;
-    top: 2vh;
-    right: 2vh;
+    top: 2rem;
+    right: 2rem;
     cursor: pointer;
     width: 3.5rem;
   }
