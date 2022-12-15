@@ -2,6 +2,16 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'custom',
+        path: '/',
+        component: resolve(__dirname, 'pages/index.vue')
+      })
+    }
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     htmlAttrs: {

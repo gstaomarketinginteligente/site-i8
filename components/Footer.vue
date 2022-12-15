@@ -77,7 +77,7 @@
     </div>
     <div class="bottom-section">
       <div class="footer-container">
-        <p>© 2021-2022 i8 Tecnologia da Informação</p>
+        <p>© 2021-2023 i8 Tecnologia da Informação</p>
       </div>
     </div>
   </footer>

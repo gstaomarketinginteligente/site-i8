@@ -8,7 +8,8 @@
 html {
     scroll-behavior: smooth;
     font-size: calc(5px + 0.390625vw);
-
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     --verde: #17bf1f;
     --verde-escuro: #0abf04;
     --roxo: #8366ff;
@@ -19,6 +20,16 @@ body {
     font-family: "Kanit", sans-serif;
     padding-top: 5rem;
     overflow-x: hidden;
+    
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }
 
 img {
